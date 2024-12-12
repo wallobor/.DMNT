@@ -1,11 +1,46 @@
 <html>
     <head>
         <title>.DMNT</title>
+        <link rel="icon" href="assets/dmnt_ico.png">
+
+        <style>
+            .back_a {
+                background: linear-gradient(to right, #8bb0ff 0%,#db82ff 50%, #8bb0ff 100%); 
+                background-size: 200%;
+                animation: bg_a 5s linear infinite;
+            }
+
+            @keyframes bg_a{
+                0%{
+                    background-position-x: 0%;
+                }
+            
+                100%{
+                    background-position-x: 200%;
+                }
+            }
+
+            .back_b {
+                background: linear-gradient(to right, #4b74cc 0%,#a233ce 50%, #4b74cc 100%); 
+                background-size: 200%;
+                animation: bg_b 5s linear infinite;
+            }
+
+            @keyframes bg_b{
+                0%{
+                    background-position-x: 200%;
+                }
+            
+                100%{
+                    background-position-x: 0%;
+                }
+            }
+        </style>
     </head>
 
-    <body style="margin: 0%;">
+    <body id="home" style="margin: 0px; padding: 0px;">
         <a href="home.html" style="text-decoration: none;">
-            <div style="background-image: linear-gradient(to right, rgb(17, 0, 27) , rgb(0, 7, 37)); position: sticky; top: 0; height: 50;">
+            <div style="background-image: linear-gradient(to right, rgb(33, 0, 53) , rgb(0, 11, 61)); position: sticky; top: 0; height: 50;">
                 <center>
                     <p style="font-size: 50;">
                         <font color=250eab face="cocogoose pro" size=8><b>.</b></font><font color=4b0abd face="cocogoose pro" size=8><b>D</b></font><font color=7007d0 face="cocogoose pro" size=8><b>M</b></font><font color=9603e2 face="cocogoose pro" size=8><b>N</b></font><font color=bb00f5 face="cocogoose pro" size=8><b>T</b></font>
@@ -14,10 +49,10 @@
             </div>
         </a>
 
-        <div style="background-image: url(assets/Untitled\ design.png); height: 400px; background-position-x: center; background-position-y: -240px; margin-bottom: -10px;">
+        <div style="background-image: url(assets/dmnt.png); height: 400px; background-position-x: center; background-position-y: -240px; margin-bottom: -10px;">
         </div>
 
-        <div style="background-color: rgb(186, 112, 255);">
+        <div id="what" class="back_a">
             <br>
             <center>
                 <font size="8" face="Cocogoose Pro" color="rgb(0, 42, 49)">
@@ -26,32 +61,53 @@
                 <font size="5" face="Cocogoose">
                     <p>.DMNT (shorthand for Diamonite) is a small industry that specializes in Game-Development</p>
                     <p>Program used including:</p>
-                    <img src="assets/godotengine.png" alt="" width="500">
-                    <img src="assets/python2.png" alt="" width="500">
+                    <a href="https://godotengine.org/"><img src="assets/godotengine.png" alt="" width="500"></a>
+                    <a href="https://www.python.org/"><img src="assets/python.png" alt="" width="500"></a>
                 </font>
             </center>
             <br>
         </div>
 
-        <div style="background-color: rgb(185, 132, 255);">
+        <div id="who" class="back_b">
             <br>
             <center>
                 <font size="8" face="Cocogoose Pro" color="rgb(0, 42, 49)">
                     <p><font color=0e109f face="cocogoose pro" size=8><b>W</b></font><font color=1d0ea6 face="cocogoose pro" size=8><b>h</b></font><font color=2b0dad face="cocogoose pro" size=8><b>o</b></font><font color=3a0cb5 face="cocogoose pro" size=8><b> </b></font><font color=480abc face="cocogoose pro" size=8><b>i</b></font><font color=5609c3 face="cocogoose pro" size=8><b>s</b></font><font color=6508ca face="cocogoose pro" size=8><b> </b></font><font color=7307d1 face="cocogoose pro" size=8><b>.</b></font><font color=8105d8 face="cocogoose pro" size=8><b>D</b></font><font color=9004e0 face="cocogoose pro" size=8><b>M</b></font><font color=9e03e7 face="cocogoose pro" size=8><b>N</b></font><font color=ad01ee face="cocogoose pro" size=8><b>T</b></font><font color=bb00f5 face="cocogoose pro" size=8><b>?</b></font></p>
                 </font>
                 <font size="5" face="Cocogoose">
-                    <img src="assets/syauqiimg.png" alt="">
+                    <img src="assets/profile.png" alt="">
                     <p>.DMNT is currently managed and run by Syauqi Aufa</p>
-                    <p>Started in programming industry on <font face="impact"><b>2021</b></font>, has created about <font face="impact"><b>5</b></font> game projects.</p>
+                    <p>Started in programming industry on <font face="futura" size="6"><b>2021</b></font>, .DMNT has created about <font face="futura" size="6"><b>5</b></font> game projects.</p>
                 </font>
             <br>
         </div>
-        
-        <div style="position: sticky; top: 0;">
+        <!-- Button
+            <div style="position: sticky; bottom: 0;">
             <button style="font-size: 25; background-color: rgb(222, 150, 255); width: 500; border-color: rgb(50, 0, 59); border-width: 5; border-radius: 0.5cap; background-position-x: left;" onclick="window.location.href='https://www.example.com';">
                 <font face="impact" color=24002e>B</font><font face="impact" color=270036>u</font><font face="impact" color=29013e>t</font><font face="impact" color=2b0145>t</font><font face="impact" color=2e014d>o</font><font face="impact" color=300155>n</font>
             </button>
         </div>
+        -->
+        <div style="position: fixed; bottom: 0px; margin: 10px;">
+            <button style="background-image: url(assets/dmnt_ico.png); background-size: cover; width: 100px; height: 100px; background-color: rgba(55, 0, 255, 0.61); border: transparent; border-radius: 50%;" disabled onclick="window.location.href='home.html';">
+                
+            </button>
+            <br>
+        </div>
+
+        <div class="back_a", style="overflow: hidden;">
+            <center>
+                <p style="line-height: 100%;">
+                    <font size="3">
+                        Created by Syauqi Aufa
+                        <br>
+                        Powered by <a href="https://www.netlify.com/">Netlify</a>
+                    </font>
+                </p>
+            </center>
+        </div>
     </body>
 
+    <footer>
+    </footer>
 </html>
